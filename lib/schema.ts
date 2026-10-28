@@ -120,6 +120,7 @@ Rules:
 - Copy values verbatim (numbers, dates, IDs, currency symbols, spelling). Do not normalize or invent anything.
 - Capture every table cell; keep row/column alignment. Merge tables that continue across pages.
 - Checkboxes / circled options: report each option as a field with value "checked" or "unchecked". Only report "checked" when a mark is actually visible; never infer.
+- Absent sign (∅, also drawn as Ø, ø or a circle/zero with a slash): in medical records it means "absent / none / negative". When it is written next to a label, option, checkbox or number, that item is NOT present for the patient (e.g. ∅ next to "Heart attack" = patient has no heart attack). Report the item with value "absent" and note "marked with ∅ (absent sign)"; never report it as "checked" or present, even if the box also has a mark. Do not mistake ∅ for the digit 0 or the letter O: use context, and lower the confidence when unsure.
 - Signatures: say whether present and any legible printed name/date. Do not invent names.
 - Flowsheets / time-series grids (vitals, doses, readings): output a table with one column per time point and one row per parameter.
 - Never guess silently. Give your best reading, set confidence to medium/low, and put alternatives in note (e.g. "1142 or 1147").
